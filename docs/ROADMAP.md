@@ -1,14 +1,23 @@
 # 🗺️ Roadmap — atc-explorer
 
-## Phase 1: Basic Chain Explorer (Q3 2026) - [Erreicht]
-- [x] Block & TX List View
-- [x] Address Ledger Inspection
+> **Repo:** [atc-explorer](https://github.com/A-TownChain-Okosystems/atc-explorer)
+> **Layer:** L7 | **Stand:** 2026-08-06
 
-## Phase 2: Smart Contract & Token Indexing (Q4 2026)
-- [ ] Contract Code Verification Tool
-- [ ] NFT Gallery Inspector
-- [ ] Token Holder Rankings
+---
 
-## Phase 3: Analytics & Visualizations (Q1 2027)
-- [ ] Network Graph Visualizer
-- [ ] Gas Tracker Charts
+## Sprint-Zuordnung
+
+| Sprint | Phase | Status | Aufgaben |
+|--------|-------|--------|----------|
+| 3.0 | Gateway+Backend | Aktiv | — |
+| 3.1 | Explorer+CLI | Geplant | — |
+
+## Meilensteine
+
+1. **v0.3** — ATCLang Parser stabil, Basis-Module migriert
+2. **v0.4** — Struct-Inheritance, Kernel-Support, VM Opcodes
+3. **v1.0** — Vollständige Implementierung, Test-Abdeckung >80%
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
