@@ -1,35 +1,39 @@
-# 🌳 Architektur — atc-explorer-wiki
+# ARCHITECTURE.md — atc-explorer
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** 7475ba6
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 10 |
-| Zeilen | 171 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 8 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (4 files, 86 lines)
-│   ├── API.md (14 lines)
-│   ├── ARCHITECTURE.md (35 lines)
-│   ├── MODULES.md (14 lines)
-│   └── ROADMAP.md (23 lines)
+## File Tree
+```tree
 ├── .gitignore
-├── FILE_REGISTER.md (18 lines)
+├── CHANGELOG.md
+├── COMPONENT_PLAN.md
+├── FILE_REGISTER.md
 ├── LICENSE
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (35 lines)
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+├── address_view.atc
+├── block_view.atc
+├── mempool_view.atc
+├── package.json
+├── search.atc
+├── src/
+│   ├── api/
+│   ├── components/
+│   ├── index.ts
+│   └── pages/
+├── stats_dashboard.atc
+├── tsconfig.json
+└── tx_view.atc
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- **src/components/**: Reusable React UI components for transaction tables, block height badges, address cards, and search inputs.
+- **src/pages/**: Application routes for block view, transaction view, address balance inspection, and mempool status dashboard.
+- **src/api/**: Blockchain REST and RPC API integration layer querying A-TownChain indexers.
+- **package.json** & **tsconfig.json**: Node package dependencies, build scripts, and strict TypeScript compiler settings.
+
+## Build System
+npm / pnpm with TypeScript compiler (`tsc`) and Vite / Webpack frontend bundler.
+
+## Dependencies
+TypeScript 5.0+, React, Axios / Fetch API, Chart.js / Recharts for visualizations, Tailwind CSS.
